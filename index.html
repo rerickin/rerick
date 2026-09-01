@@ -8,6 +8,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-16637319493');
+  gtag('config', 'AW-951094973');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -595,15 +596,18 @@
 
   </div>
 
-  <!-- Disparo de conversão: clique no WhatsApp = lead -->
+  <!-- Disparo de conversão: clique no WhatsApp = lead (Contato) -->
   <script>
     (function(){
-      // >>> Substitua COLE_O_ROTULO_AQUI pelo rótulo (label) da conversão "Contatos" do Google Ads <<<
-      var SEND_TO = 'AW-16637319493/COLE_O_ROTULO_AQUI';
+      var SEND_TO = 'AW-951094973/gjRcCJuI8wMQvZ3CxQM';
       document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(function(a){
         a.addEventListener('click', function(){
           if (typeof gtag === 'function') {
-            gtag('event', 'conversion', { 'send_to': SEND_TO });
+            gtag('event', 'conversion', {
+              'send_to': SEND_TO,
+              'value': 1.0,
+              'currency': 'BRL'
+            });
           }
         });
       });
